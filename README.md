@@ -1,9 +1,6 @@
 # Disease-NER
 Given a medical diagnosis, identifying medical conditions within the text and mapping them to standardized medical encodings.
 
-# Disease-NER
-Given a medical diagnosis, identifying medical conditions within the text and mapping them to standardized medical encodings.
-
 ## Data
 The data directory contains:
 - The disease mentions from the text files stored in entities.tsv.
