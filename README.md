@@ -13,3 +13,12 @@ The pre-processing stage involves:
 - Splitting medical text in each file into sentences.
 - Tokenizing the sentences into words/tokens.
 - Calculating IOB tags for the tokens for named entity recognition (NER) task.
+
+## NER Task
+Two Types of Models are built:
+- The entire clinical case is given as input
+- Sentence based Tokenization
+
+The basic model used is : https://huggingface.co/d4data/biomedical-ner-all
+
+Disease mentions identification is built as a Token classification problem
