@@ -19,6 +19,8 @@ Two Types of Models are built:
 - The entire clinical case is given as input
 - Sentence based Tokenization
 
-The basic model used is : https://huggingface.co/d4data/biomedical-ner-all
+The basic models used are : 
+- https://huggingface.co/d4data/biomedical-ner-all
+- https://huggingface.co/pucpr/clinicalnerpt-medical
 
 Disease mentions identification is built as a Token classification problem
