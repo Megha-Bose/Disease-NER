@@ -14,13 +14,27 @@ The pre-processing stage involves:
 - Tokenizing the sentences into words/tokens.
 - Calculating IOB tags for the tokens for named entity recognition (NER) task.
 
+- Code: [Pre-processing.ipynb](Pre-processing.ipynb)
+
 ## NER Task
-Two Types of Models are built:
-- The entire clinical case is given as input
-- Sentence based Tokenization
+- Two Types of Models are built:
+  - The entire clinical case / document is given as input
+  - Sentence based Tokenization and the sentences are given as input
 
-The basic models used are : 
-- https://huggingface.co/d4data/biomedical-ner-all
-- https://huggingface.co/pucpr/clinicalnerpt-medical
+- The basic models used are : 
+  - https://huggingface.co/d4data/biomedical-ner-all
+  - https://huggingface.co/pucpr/clinicalnerpt-medical
 
-Disease mentions identification is built as a Token classification problem
+- Disease mentions identification is built as a Token classification problem.
+
+- Code: [Entities_NER.ipynb](Entities_NER.ipynb)
+
+## Entity Linking Task
+- The disease mentions are linked to SNOMED CT codes.
+
+- The models used are: 
+  - SapBERT: https://huggingface.co/cambridgeltl/SapBERT-from-PubMedBERT-fulltext
+  - Roberta-Large: https://huggingface.co/raynardj/pmc-med-bio-mlm-roberta-large
+  - PubMedBERT: https://huggingface.co/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract
+  
+- Code: [EL.ipynb](EL.ipynb) (SapBERT), [EL_roberta.ipynb](EL_roberta.ipynb) (Roberta-Large), [EL_pubmedbert.ipynb](EL_pubmedbert.ipynb) (PubMedBERT)
